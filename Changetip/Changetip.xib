@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="Changetip" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="YYF-sO-5XS" id="fjW-cS-D1t"/>
+                <outletCollection property="numberButtons" destination="Ogd-n6-JoQ" collectionClass="NSMutableArray" id="5E9-Jk-749"/>
+                <outletCollection property="numberButtons" destination="RFa-az-y77" collectionClass="NSMutableArray" id="NMa-gp-Uf9"/>
+                <outletCollection property="numberButtons" destination="aZ3-ye-z3w" collectionClass="NSMutableArray" id="fAc-fA-Ar4"/>
+                <outletCollection property="numberButtons" destination="csC-T2-nWy" collectionClass="NSMutableArray" id="gOz-z2-i9E"/>
+                <outletCollection property="numberButtons" destination="mt8-AZ-NjG" collectionClass="NSMutableArray" id="Ea0-Yq-2aB"/>
+                <outletCollection property="numberButtons" destination="z8b-g5-l10" collectionClass="NSMutableArray" id="hkw-qr-SfS"/>
+                <outletCollection property="numberButtons" destination="2XZ-il-GmT" collectionClass="NSMutableArray" id="uxl-gS-3Of"/>
+                <outletCollection property="numberButtons" destination="PF4-ma-9vH" collectionClass="NSMutableArray" id="B0K-8z-vEb"/>
+                <outletCollection property="numberButtons" destination="eEe-l5-815" collectionClass="NSMutableArray" id="Jhd-yu-XPN"/>
+                <outletCollection property="numberButtons" destination="FBY-gC-KbQ" collectionClass="NSMutableArray" id="QY5-Gk-6P6"/>
+                <outletCollection property="numberButtons" destination="X0R-QG-aB7" collectionClass="NSMutableArray" id="5Yx-Mg-zq6"/>
+                <outletCollection property="numberButtons" destination="Pia-u5-9dd" collectionClass="NSMutableArray" id="C0h-Pe-Qt7"/>
+                <outletCollection property="numberButtons" destination="YYF-sO-5XS" collectionClass="NSMutableArray" id="BWG-b8-Uwk"/>
+                <outletCollection property="numberButtons" destination="eun-aO-UNe" collectionClass="NSMutableArray" id="1rF-1x-7dU"/>
+                <outletCollection property="numberButtons" destination="Zip-rH-l86" collectionClass="NSMutableArray" id="y1r-aF-0Tt"/>
+                <outletCollection property="numberButtons" destination="wPm-w0-zEU" collectionClass="NSMutableArray" id="PJX-9F-grV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eun-aO-UNe">
+                    <rect key="frame" x="131" y="52" width="177" height="75"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Tip">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTipButtonTapped:" destination="-1" eventType="touchUpInside" id="nh8-mM-jLP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYF-sO-5XS">
+                    <rect key="frame" x="8" y="9" width="300" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-n6-JoQ">
+                    <rect key="frame" x="8" y="52" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="3C4-FN-1BH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFa-az-y77">
+                    <rect key="frame" x="48" y="52" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="2">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="9xv-C0-W07"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ3-ye-z3w">
+                    <rect key="frame" x="88" y="52" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="eb1-2W-Ges"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csC-T2-nWy">
+                    <rect key="frame" x="8" y="92" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="4">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="pBu-G0-nRs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mt8-AZ-NjG">
+                    <rect key="frame" x="48" y="92" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="5">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="WbB-PK-UOq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-w0-zEU">
+                    <rect key="frame" x="131" y="172" width="177" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onSpaceButtonTapped:" destination="-1" eventType="touchUpInside" id="jEv-BS-MjL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-g5-l10">
+                    <rect key="frame" x="88" y="92" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="6">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="4oh-kV-9zD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XZ-il-GmT">
+                    <rect key="frame" x="8" y="132" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="7">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="ZOM-se-rem"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PF4-ma-9vH">
+                    <rect key="frame" x="48" y="132" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="8">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="i0Y-1J-BzL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEe-l5-815">
+                    <rect key="frame" x="88" y="132" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="9">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="cW0-Do-Wtv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0R-QG-aB7">
+                    <rect key="frame" x="48" y="172" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="0">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="P3W-VD-CsP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBY-gC-KbQ">
+                    <rect key="frame" x="8" y="172" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title=".">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="zod-SO-3pW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zip-rH-l86">
+                    <rect key="frame" x="131" y="132" width="177" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNextKeyboardTapped:" destination="-1" eventType="touchUpInside" id="5fc-G8-hGL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pia-u5-9dd">
+                    <rect key="frame" x="88" y="170" width="35" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="⌫">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onDeleteButtonTapped:" destination="-1" eventType="touchUpInside" id="Mah-ig-Ekc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.76078431372549016" green="0.88627450980392153" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="247" y="323"/>
+        </view>
+    </objects>
+</document>
