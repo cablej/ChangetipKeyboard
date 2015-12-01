@@ -33,7 +33,11 @@
 			<key>PrimaryLanguage</key>
 			<string>en-US</string>
 			<key>RequestsOpenAccess</key>
+<<<<<<< HEAD
 			<true/>
+=======
+			<false/>
+>>>>>>> origin/master
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.keyboard-service</string>
