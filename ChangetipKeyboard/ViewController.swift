@@ -23,12 +23,7 @@ import MobileCoreServices
 import AssetsLibrary
 
 class ViewController: UIViewController {
-<<<<<<< HEAD
     
-=======
-
-    @IBOutlet var textField: UITextField!
->>>>>>> origin/master
     var accessToken = ""
     
     let clientID = "bHqTC61Fln8zpgmu8YlDGRm9hRPdHD8ynrh1fqaB"
@@ -41,7 +36,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-<<<<<<< HEAD
         
         let shared = NSUserDefaults(suiteName: "group.ChangetipKeyboard")
         shared?.setObject("helo", forKey: "val")
@@ -54,11 +48,6 @@ class ViewController: UIViewController {
         return true
     }
     
-=======
-        textField.becomeFirstResponder()
-    }
-    
->>>>>>> origin/master
     func parametersFromQueryString(queryString: String?) -> [String: String] { //helper method for oauth
         var parameters = [String: String]()
         if (queryString != nil) {
@@ -110,15 +99,11 @@ class ViewController: UIViewController {
                             
                             self.accessToken = cred.accessToken
                             
-<<<<<<< HEAD
                             let userDefaults = NSUserDefaults.init(suiteName: "group.ChangetipKeyboard")
                             
                             userDefaults!.setObject(self.accessToken, forKey: "accessToken")
                             
                             userDefaults?.synchronize()
-=======
-                            NSUserDefaults.standardUserDefaults().setObject(self.accessToken, forKey: "accessToken")
->>>>>>> origin/master
                             
                         }) { (error: NSError!) -> Void in
                             self.presentAlert("Error", message: error!.localizedDescription)
@@ -134,7 +119,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sendTip(sender: AnyObject) {
-<<<<<<< HEAD
         /*let accessToken = NSUserDefaults.standardUserDefaults().objectForKey("accessToken")!
         
         
@@ -155,8 +139,6 @@ class ViewController: UIViewController {
             }, failure: { (op: AFHTTPRequestOperation!, error: NSError!) -> Void in
                 self.presentAlert("Error", message: error!.localizedDescription)
         })*/
-=======
->>>>>>> origin/master
         
     }
     

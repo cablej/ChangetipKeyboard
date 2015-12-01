@@ -54,11 +54,8 @@ class KeyboardViewController: UIInputViewController {
             layer.cornerRadius = 8.0
             //layer.borderWidth = 1.0
         }
-<<<<<<< HEAD
         
         
-=======
->>>>>>> origin/master
     }
     
     func loadInterface() {
@@ -79,7 +76,6 @@ class KeyboardViewController: UIInputViewController {
     }
 
     @IBAction func onTipButtonTapped(sender: AnyObject) {
-<<<<<<< HEAD
         //let accessToken = NSUserDefaults.standardUserDefaults().objectForKey("accessToken")!
         let userDefaults = NSUserDefaults(suiteName: "group.ChangetipKeyboard")
         userDefaults?.synchronize()
@@ -121,29 +117,6 @@ class KeyboardViewController: UIInputViewController {
         
         //self.textDocumentProxy.insertText("http://tip.me/once/6dtE-yXy5N9f")
         
-=======
-        
-        let accessToken = NSUserDefaults.standardUserDefaults().objectForKey("accessToken")
-        
-        print("sending tip: \(accessToken)")
-        // [8] Set credential in header
-        let manager = AFOAuth2Manager(baseURL: self.baseURL,
-            clientID: self.clientID,
-            secret: self.clientSecret)
-        manager.useHTTPBasicAuthentication = false
-        print(accessToken)
-        manager.requestSerializer.setValue("Bearer \(accessToken)",
-            forHTTPHeaderField: "Authorization")
-        manager.POST("https://www.changetip.com/v2/tip-url/",
-            parameters: ["amount" : "1 satoshi"], success: { (op:AFHTTPRequestOperation!, obj:AnyObject!) -> Void in
-                let url = obj["magic_url"]! as! NSString
-                self.presentAlert("Success", message: "Successfully uploaded to \(url)")
-            }, failure: { (op: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                self.presentAlert("Error", message: error!.localizedDescription)
-        })
-        
-        self.textDocumentProxy.insertText("http://tip.me/once/6dtE-yXy5N9f")
->>>>>>> origin/master
     }
     
     func presentAlert(title: String, message: String) {

@@ -18,7 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-c5-Cxk">
                                 <rect key="frame" x="0.0" y="28" width="600" height="72"/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.2274509804" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,21 +28,10 @@
                                 <state key="normal" title="Login with Changetip">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-=======
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-wE-nBI">
-                                <rect key="frame" x="87" y="110" width="406" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-c5-Cxk">
-                                <rect key="frame" x="87" y="45" width="149" height="30"/>
-                                <state key="normal" title="Log in with Changetip"/>
->>>>>>> origin/master
                                 <connections>
                                     <action selector="authenticate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcd-xD-5Ge"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Test here!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wtu-W8-bnq">
                                 <rect key="frame" x="0.0" y="103" width="600" height="297"/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.2274509804" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,28 +64,7 @@
                                 <exclude reference="hSn-vk-kIW"/>
                             </mask>
                         </variation>
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmp-hh-cpe">
-                                <rect key="frame" x="287" y="45" width="104" height="30"/>
-                                <state key="normal" title="Create Tip URL"/>
-                                <connections>
-                                    <action selector="sendTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIy-zn-fhj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Qgk-wE-nBI" secondAttribute="trailing" constant="231" id="2Yq-F4-rTp"/>
-                            <constraint firstItem="Qgk-wE-nBI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="AzT-bF-qQK"/>
-                            <constraint firstItem="Qgk-wE-nBI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mg5-Ea-J49"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Qgk-wE-nBI" secondAttribute="trailing" id="nh1-8M-nxg"/>
-                            <constraint firstItem="Qgk-wE-nBI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="232" id="qa6-dk-If3"/>
-                        </constraints>
->>>>>>> origin/master
                     </view>
-                    <connections>
-                        <outlet property="textField" destination="Qgk-wE-nBI" id="2Pr-kf-8q7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
