@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>37FC0DD0-B76C-427B-87A8-B6CCB3C7C446</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ChangetipKeyboard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>497C4DFC8FBB7DF2E642050BCA7953DD3CC69ACE</key>
+		<string>https://github.com/cablej/ChangetipKeyboard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ChangetipKeyboard.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>497C4DFC8FBB7DF2E642050BCA7953DD3CC69ACE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cablej/ChangetipKeyboard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>497C4DFC8FBB7DF2E642050BCA7953DD3CC69ACE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>497C4DFC8FBB7DF2E642050BCA7953DD3CC69ACE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ChangetipKeyboard</string>
+		</dict>
+	</array>
+</dict>
+</plist>

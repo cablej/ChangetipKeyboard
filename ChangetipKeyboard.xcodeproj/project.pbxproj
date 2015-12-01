@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABA474039663526FC2DEFF8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 390E293D3133D5BDAC15B2AB /* libPods.a */; };
 		D1C263A61C06878A00BA6BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263A51C06878A00BA6BD4 /* AppDelegate.swift */; };
 		D1C263A81C06878A00BA6BD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263A71C06878A00BA6BD4 /* ViewController.swift */; };
 		D1C263AB1C06878A00BA6BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C263A91C06878A00BA6BD4 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		D1C263B01C06878A00BA6BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C263AE1C06878A00BA6BD4 /* LaunchScreen.storyboard */; };
 		D1C263BB1C06878A00BA6BD4 /* ChangetipKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263BA1C06878A00BA6BD4 /* ChangetipKeyboardTests.swift */; };
 		D1C263C61C06878A00BA6BD4 /* ChangetipKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263C51C06878A00BA6BD4 /* ChangetipKeyboardUITests.swift */; };
+		D1C263DA1C0687FE00BA6BD4 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263D91C0687FE00BA6BD4 /* KeyboardViewController.swift */; };
+		D1C263DE1C0687FE00BA6BD4 /* Changetip.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1C263D71C0687FE00BA6BD4 /* Changetip.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1C263E41C06882700BA6BD4 /* Changetip.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1C263E31C06882700BA6BD4 /* Changetip.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +35,37 @@
 			remoteGlobalIDString = D1C263A11C06878A00BA6BD4;
 			remoteInfo = ChangetipKeyboard;
 		};
+		D1C263DC1C0687FE00BA6BD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1C2639A1C06878A00BA6BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1C263D61C0687FE00BA6BD4;
+			remoteInfo = Changetip;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D1C263E21C0687FE00BA6BD4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D1C263DE1C0687FE00BA6BD4 /* Changetip.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		390E293D3133D5BDAC15B2AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EE31271514E75736426796 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		80A99C6E16E48B279BFD24AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D12C43421C0D2C9000B51AD9 /* libPods-AFOAuth2Manager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFOAuth2Manager.a"; path = "Pods/../build/Debug-iphoneos/libPods-AFOAuth2Manager.a"; sourceTree = "<group>"; };
+		D12C43441C0D2C9300B51AD9 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/../build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		D12C43461C0D2C9800B51AD9 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		D12C43901C0D316F00B51AD9 /* ChangetipKeyboardHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangetipKeyboardHeader.h; sourceTree = "<group>"; };
 		D1C263A21C06878A00BA6BD4 /* ChangetipKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangetipKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C263A51C06878A00BA6BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C263A71C06878A00BA6BD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +79,10 @@
 		D1C263C11C06878A00BA6BD4 /* ChangetipKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChangetipKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C263C51C06878A00BA6BD4 /* ChangetipKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangetipKeyboardUITests.swift; sourceTree = "<group>"; };
 		D1C263C71C06878A00BA6BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C263D71C0687FE00BA6BD4 /* Changetip.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Changetip.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C263D91C0687FE00BA6BD4 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D1C263DB1C0687FE00BA6BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C263E31C06882700BA6BD4 /* Changetip.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Changetip.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA474039663526FC2DEFF8B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +108,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1C263D41C0687FE00BA6BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A6D686CBB46388A3978C64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D12C43461C0D2C9800B51AD9 /* libPods.a */,
+				D12C43441C0D2C9300B51AD9 /* libPods-AFNetworking.a */,
+				D12C43421C0D2C9000B51AD9 /* libPods-AFOAuth2Manager.a */,
+				390E293D3133D5BDAC15B2AB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71FFDE01386047103C584FFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41EE31271514E75736426796 /* Pods.debug.xcconfig */,
+				80A99C6E16E48B279BFD24AF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D1C263991C06878A00BA6BD4 = {
 			isa = PBXGroup;
 			children = (
+				D12C43901C0D316F00B51AD9 /* ChangetipKeyboardHeader.h */,
 				D1C263A41C06878A00BA6BD4 /* ChangetipKeyboard */,
 				D1C263B91C06878A00BA6BD4 /* ChangetipKeyboardTests */,
 				D1C263C41C06878A00BA6BD4 /* ChangetipKeyboardUITests */,
+				D1C263D81C0687FE00BA6BD4 /* Changetip */,
 				D1C263A31C06878A00BA6BD4 /* Products */,
+				71FFDE01386047103C584FFB /* Pods */,
+				16A6D686CBB46388A3978C64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +158,7 @@
 				D1C263A21C06878A00BA6BD4 /* ChangetipKeyboard.app */,
 				D1C263B61C06878A00BA6BD4 /* ChangetipKeyboardTests.xctest */,
 				D1C263C11C06878A00BA6BD4 /* ChangetipKeyboardUITests.xctest */,
+				D1C263D71C0687FE00BA6BD4 /* Changetip.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +194,16 @@
 			path = ChangetipKeyboardUITests;
 			sourceTree = "<group>";
 		};
+		D1C263D81C0687FE00BA6BD4 /* Changetip */ = {
+			isa = PBXGroup;
+			children = (
+				D1C263D91C0687FE00BA6BD4 /* KeyboardViewController.swift */,
+				D1C263DB1C0687FE00BA6BD4 /* Info.plist */,
+				D1C263E31C06882700BA6BD4 /* Changetip.xib */,
+			);
+			path = Changetip;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +214,13 @@
 				D1C2639E1C06878A00BA6BD4 /* Sources */,
 				D1C2639F1C06878A00BA6BD4 /* Frameworks */,
 				D1C263A01C06878A00BA6BD4 /* Resources */,
+				D1C263E21C0687FE00BA6BD4 /* Embed App Extensions */,
+				ED7731F9D8FD35941CBC0166 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D1C263DD1C0687FE00BA6BD4 /* PBXTargetDependency */,
 			);
 			name = ChangetipKeyboard;
 			productName = ChangetipKeyboard;
@@ -181,12 +263,30 @@
 			productReference = D1C263C11C06878A00BA6BD4 /* ChangetipKeyboardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D1C263D61C0687FE00BA6BD4 /* Changetip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C263DF1C0687FE00BA6BD4 /* Build configuration list for PBXNativeTarget "Changetip" */;
+			buildPhases = (
+				D1C263D31C0687FE00BA6BD4 /* Sources */,
+				D1C263D41C0687FE00BA6BD4 /* Frameworks */,
+				D1C263D51C0687FE00BA6BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Changetip;
+			productName = Changetip;
+			productReference = D1C263D71C0687FE00BA6BD4 /* Changetip.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D1C2639A1C06878A00BA6BD4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jack Cable";
 				TargetAttributes = {
@@ -200,6 +300,9 @@
 					D1C263C01C06878A00BA6BD4 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = D1C263A11C06878A00BA6BD4;
+					};
+					D1C263D61C0687FE00BA6BD4 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
@@ -219,6 +322,7 @@
 				D1C263A11C06878A00BA6BD4 /* ChangetipKeyboard */,
 				D1C263B51C06878A00BA6BD4 /* ChangetipKeyboardTests */,
 				D1C263C01C06878A00BA6BD4 /* ChangetipKeyboardUITests */,
+				D1C263D61C0687FE00BA6BD4 /* Changetip */,
 			);
 		};
 /* End PBXProject section */
@@ -248,7 +352,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1C263D51C0687FE00BA6BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C263E41C06882700BA6BD4 /* Changetip.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED7731F9D8FD35941CBC0166 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1C2639E1C06878A00BA6BD4 /* Sources */ = {
@@ -276,6 +406,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1C263D31C0687FE00BA6BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C263DA1C0687FE00BA6BD4 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +426,11 @@
 			isa = PBXTargetDependency;
 			target = D1C263A11C06878A00BA6BD4 /* ChangetipKeyboard */;
 			targetProxy = D1C263C21C06878A00BA6BD4 /* PBXContainerItemProxy */;
+		};
+		D1C263DD1C0687FE00BA6BD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1C263D61C0687FE00BA6BD4 /* Changetip */;
+			targetProxy = D1C263DC1C0687FE00BA6BD4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,6 +494,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +533,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -396,23 +541,33 @@
 		};
 		D1C263CB1C06878A00BA6BD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE31271514E75736426796 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ChangetipKeyboard/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ChangetipKeyboardHeader.h;
 			};
 			name = Debug;
 		};
 		D1C263CC1C06878A00BA6BD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A99C6E16E48B279BFD24AF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ChangetipKeyboard/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ChangetipKeyboardHeader.h;
 			};
 			name = Release;
 		};
@@ -424,6 +579,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboardTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChangetipKeyboard.app/ChangetipKeyboard";
 			};
 			name = Debug;
@@ -436,6 +592,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboardTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChangetipKeyboard.app/ChangetipKeyboard";
 			};
 			name = Release;
@@ -447,6 +604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboardUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_TARGET_NAME = ChangetipKeyboard;
 				USES_XCTRUNNER = YES;
 			};
@@ -459,8 +617,45 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboardUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_TARGET_NAME = ChangetipKeyboard;
 				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		D1C263E01C0687FE00BA6BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Changetip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboard.Changetip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ChangetipKeyboardHeader.h;
+			};
+			name = Debug;
+		};
+		D1C263E11C0687FE00BA6BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Changetip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Cable.cable.ChangetipKeyboard.Changetip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ChangetipKeyboardHeader.h;
 			};
 			name = Release;
 		};
@@ -483,6 +678,7 @@
 				D1C263CC1C06878A00BA6BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1C263CD1C06878A00BA6BD4 /* Build configuration list for PBXNativeTarget "ChangetipKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +687,7 @@
 				D1C263CF1C06878A00BA6BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1C263D01C06878A00BA6BD4 /* Build configuration list for PBXNativeTarget "ChangetipKeyboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +696,16 @@
 				D1C263D21C06878A00BA6BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C263DF1C0687FE00BA6BD4 /* Build configuration list for PBXNativeTarget "Changetip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C263E01C0687FE00BA6BD4 /* Debug */,
+				D1C263E11C0687FE00BA6BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
