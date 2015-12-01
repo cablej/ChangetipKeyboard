@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1500822E588213BEB1B90F42 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38694F3A3E80B5F4BF40D4 /* libPods.a */; };
-		5FD8D9AF8FAB083535C2A82D /* libPods-Changetip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FA6AF0A3B919AFB49128DD /* libPods-Changetip.a */; };
 		D12C43931C0D468C00B51AD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D12C43921C0D468C00B51AD9 /* libPods.a */; };
 		D1C263A61C06878A00BA6BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263A51C06878A00BA6BD4 /* AppDelegate.swift */; };
 		D1C263A81C06878A00BA6BD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263A71C06878A00BA6BD4 /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 		D1C263DA1C0687FE00BA6BD4 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C263D91C0687FE00BA6BD4 /* KeyboardViewController.swift */; };
 		D1C263DE1C0687FE00BA6BD4 /* Changetip.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1C263D71C0687FE00BA6BD4 /* Changetip.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1C263E41C06882700BA6BD4 /* Changetip.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1C263E31C06882700BA6BD4 /* Changetip.xib */; };
-		F56B822293CAAD56048650A0 /* libPods-ChangetipKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA52F211CFE4736F3320D93 /* libPods-ChangetipKeyboard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1500822E588213BEB1B90F42 /* libPods.a in Frameworks */,
-				F56B822293CAAD56048650A0 /* libPods-ChangetipKeyboard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D12C43931C0D468C00B51AD9 /* libPods.a in Frameworks */,
-				5FD8D9AF8FAB083535C2A82D /* libPods-Changetip.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
