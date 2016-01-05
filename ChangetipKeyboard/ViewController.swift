@@ -6,154 +6,60 @@
 //  Copyright © 2015 Jack Cable. All rights reserved.
 //
 
-extension String { //helper method for oauth
-    public func urlEncode() -> String {
-        let encodedURL = CFURLCreateStringByAddingPercentEscapes(
-            nil,
-            self as NSString,
-            nil,
-            "!@#$%&*'();:=+,/?[]",
-            CFStringBuiltInEncodings.UTF8.rawValue)
-        return encodedURL as String
-    }
-}
-
 import UIKit
 import MobileCoreServices
 import AssetsLibrary
 
 class ViewController: UIViewController {
     
-    var accessToken = ""
+    //let scope = "create_tip_urls".urlEncode()
     
-    let clientID = "bHqTC61Fln8zpgmu8YlDGRm9hRPdHD8ynrh1fqaB"
-    let clientSecret = "iLkgb58FjIsQHuRpM9r6k1IP3xMD7mXZ9OdFsyazVh1WuUtqiErqrYdh0uRLv9wl1sgb4J4tdU4tHXUWrY2AdowOhHjQ66Y11yL7WfhC4XInYHVmIeG65syaQT2Mfr49"
-    
-    let baseURL = NSURL(string: "https://www.changetip.com/")
-    let scope = "create_tip_urls".urlEncode()
-    let redirect_uri = "http://tiphound.me/callback.php"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        let shared = NSUserDefaults(suiteName: "group.ChangetipKeyboard")
-        shared?.setObject("helo", forKey: "val")
-        shared?.synchronize()
+        ChangeKit.sharedInstance.clientID = "bHqTC61Fln8zpgmu8YlDGRm9hRPdHD8ynrh1fqaB"
+        ChangeKit.sharedInstance.clientSecret = "iLkgb58FjIsQHuRpM9r6k1IP3xMD7mXZ9OdFsyazVh1WuUtqiErqrYdh0uRLv9wl1sgb4J4tdU4tHXUWrY2AdowOhHjQ66Y11yL7WfhC4XInYHVmIeG65syaQT2Mfr49"
+        ChangeKit.sharedInstance.redirect_uri = "http://tiphound.me/callback.php?u=Jack-Cable.cable.ChangetipKeyboard"
         
-        print(shared?.objectForKey("val") as! String)
+        ChangeKit.sharedInstance.scope = ["create_tip_urls", "read_user_basic", "read_user_full"]
+        
+        /*changekit.createTipURL("$0.0001", message: "") { (response) -> Void in
+            if let response = response {
+                print(response["magic_url"])
+            }
+        }*/
+        
+        /*ChangeKit.sharedInstance.tipURL("$\(0.01)", message: "") { (response) -> Void in
+            guard let response = response, let magic_url = response["magic_url"] else {
+                print("error")
+                return
+            }
+        }*/
+        
+        /*ChangeKit.sharedInstance.balance(ChangeKit.Currency.btc) { (response) -> Void in
+            guard let response = response, let balance = response["balance_user_currency"] else {
+                print("error")
+                return
+            }
+            print(balance)
+        }*/
+        
+        /*ChangeKit.sharedInstance.me(ChangeKit.Me.full) { (response) -> Void in
+            guard let response = response else {
+                print("Could not get information.")
+                return
+            }
+            print(response)
+        }*/
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
     
-    func parametersFromQueryString(queryString: String?) -> [String: String] { //helper method for oauth
-        var parameters = [String: String]()
-        if (queryString != nil) {
-            var parameterScanner: NSScanner = NSScanner(string: queryString!)
-            var name:NSString? = nil
-            var value:NSString? = nil
-            while (parameterScanner.atEnd != true) {
-                name = nil;
-                parameterScanner.scanUpToString("=", intoString: &name)
-                parameterScanner.scanString("=", intoString:nil)
-                value = nil
-                parameterScanner.scanUpToString("&", intoString:&value)
-                parameterScanner.scanString("&", intoString:nil)
-                if (name != nil && value != nil) {
-                    parameters[name!.stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!]
-                        = value!.stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
-                }
-            }
-        }
-        return parameters
-    }
-    
-    var isObserved = false
     @IBAction func authenticate(sender: AnyObject) {
-        // 1 Replace with client id /secret
-        
-        if !isObserved {
-            // 2 Add observer
-            var applicationLaunchNotificationObserver = NSNotificationCenter.defaultCenter().addObserverForName(
-                "AGAppLaunchedWithURLNotification",
-                object: nil,
-                queue: nil,
-                usingBlock: { (notification: NSNotification!) -> Void in
-                    // [5] extract code
-                    let code = self.extractCode(notification)
-                    
-                    // [6] carry on oauth2 code auth grant flow with AFOAuth2Manager
-                    let manager = AFOAuth2Manager(baseURL: self.baseURL,
-                        clientID: self.clientID,
-                        secret: self.clientSecret)
-                    manager.useHTTPBasicAuthentication = false
-                    
-                    // [7] exchange authorization code for access token
-                    manager.authenticateUsingOAuthWithURLString("o/token/",
-                        code: code,
-                        redirectURI: self.redirect_uri,
-                        success: { (cred: AFOAuthCredential!) -> Void in
-                            
-                            
-                            self.accessToken = cred.accessToken
-                            
-                            let userDefaults = NSUserDefaults.init(suiteName: "group.ChangetipKeyboard")
-                            
-                            userDefaults!.setObject(self.accessToken, forKey: "accessToken")
-                            
-                            userDefaults?.synchronize()
-                            
-                        }) { (error: NSError!) -> Void in
-                            self.presentAlert("Error", message: error!.localizedDescription)
-                    }
-            })
-            isObserved = true
-        }
-        
-        // 3 calculate final url
-        var params = "?scope=\(scope)&redirect_uri=\(redirect_uri)&client_id=\(clientID)&response_type=code"
-        // 4 open an external browser
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://changetip.com/o/authorize/\(params)")!)
-    }
-    
-    @IBAction func sendTip(sender: AnyObject) {
-        /*let accessToken = NSUserDefaults.standardUserDefaults().objectForKey("accessToken")!
-        
-        
-        print("sending tip: \(accessToken)")
-        // [8] Set credential in header
-        
-        let manager = AFOAuth2Manager(baseURL: self.baseURL,
-            clientID: self.clientID,
-            secret: self.clientSecret)
-        manager.useHTTPBasicAuthentication = false
-        print(accessToken)
-        manager.requestSerializer.setValue("Bearer \(accessToken)",
-            forHTTPHeaderField: "Authorization")
-        manager.POST("https://www.changetip.com/v2/tip-url/",
-            parameters: ["amount" : "1 satoshi"], success: { (op:AFHTTPRequestOperation!, obj:AnyObject!) -> Void in
-                let url = obj["magic_url"]! as! NSString
-                self.presentAlert("Success", message: "Successfully uploaded to \(url)")
-            }, failure: { (op: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                self.presentAlert("Error", message: error!.localizedDescription)
-        })*/
-        
-    }
-    
-    func extractCode(notification: NSNotification) -> String? {
-        let url: NSURL? = (notification.userInfo as!
-            [String: AnyObject])[UIApplicationLaunchOptionsURLKey] as? NSURL
-        
-        // [1] extract the code from the URL
-        return self.parametersFromQueryString(url?.query)["code"]
-    }
-    
-    func presentAlert(title: String, message: String) {
-        var alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        ChangeKitAuthenticate.sharedInstance.authenticate()
     }
 
 }

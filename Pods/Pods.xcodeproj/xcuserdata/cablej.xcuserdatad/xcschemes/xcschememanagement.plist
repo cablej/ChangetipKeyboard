@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AFOAuth2Manager.xcscheme</key>
+		<key>AFOAuth2Manager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A11610D9E653E968C703377</key>
+		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>301AF88DE89A84014D5105C0</key>
+		<key>8296E63C896234CD3EC15BDD6C35BEF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3FEBBB4BEC909C9B8FDBD56</key>
+		<key>E102868DC71CA847FF1A5D7F9A1D0F39</key>
 		<dict>
 			<key>primary</key>
 			<true/>

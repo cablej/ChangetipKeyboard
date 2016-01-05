@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    //Send a notification when the user logs in with changetip.
     func application(application: UIApplication,
         openURL url: NSURL,
         sourceApplication: String?,

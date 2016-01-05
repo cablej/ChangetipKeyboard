@@ -18,6 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Test here!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wtu-W8-bnq">
+                                <rect key="frame" x="0.0" y="103" width="600" height="297"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.2274509804" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="bD1-XL-9g9"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-c5-Cxk">
                                 <rect key="frame" x="0.0" y="28" width="600" height="72"/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.2274509804" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,19 +39,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="authenticate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcd-xD-5Ge"/>
+                                    <action selector="authenticate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLa-Bd-fW1"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Test here!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wtu-W8-bnq">
-                                <rect key="frame" x="0.0" y="103" width="600" height="297"/>
-                                <color key="backgroundColor" red="0.035294117649999998" green="0.2274509804" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="bD1-XL-9g9"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.76078431369999999" green="0.8862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -59,6 +59,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="1Rh-Ux-tu7"/>
                                 <exclude reference="X01-Hz-aH3"/>
                                 <exclude reference="ePZ-pI-rr7"/>
                                 <exclude reference="hSn-vk-kIW"/>
